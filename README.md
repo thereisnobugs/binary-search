@@ -41,7 +41,7 @@ if (count($argv) < 3) {
 }
 
 // Создаем объект источник данных для поиска
-$dataSource = new \BinarySearch\DataSource\FileData(filepath);
+$dataSource = new \BinarySearch\DataSource\FileData($filepath);
 
 // Инициализируем класс бинарного поиска
 $searcher = new \BinarySearch\BinarySearch($dataSource);
