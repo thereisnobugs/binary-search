@@ -11,15 +11,20 @@ Binary Search Library for php
 # Пример использования
 
 1. Получаем файл при помощи 
-wget http://www.fms.gov.ru/upload/expired-passports/list_of_expired_passports.csv.bz2
+
+> wget http://www.fms.gov.ru/upload/expired-passports/list_of_expired_passports.csv.bz2
 
 2. Распаковываем 
-bzip2 -d list_of_expired_passports.csv.bz2
+
+> bzip2 -d list_of_expired_passports.csv.bz2
 
 3. Сортируем
-sort list_of_expired_passports.csv > source.csv
+
+> sort list_of_expired_passports.csv > source.csv
 
 4. Консольная утилита для поиска просроченного файла в БД недействительных паспортов ФМС
+
+> touch fms.php
 
 ```php
 
