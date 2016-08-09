@@ -26,6 +26,8 @@ Binary Search Library for php
 
 > touch fms.php
 
+Редактируем файл fms.php пишем простой код
+
 ```php
 
 include_once 'vendor/autoload.php';
@@ -63,4 +65,29 @@ print 'Найдено на позиции: '.$position."\n";
 $dataSource->moveTo($position);
 print 'Значение: ['.$dataSource->getData().']'."\n";
 
+```
+
+5. Пробуем (размер файла source 1,2 Гб)
+5.1. На отсутствующем значении:
+
+> time php5 ./test.php ./source.csv 5005,000435
+
+```
+Не найдено
+
+real    0m0.095s
+user    0m0.018s
+sys     0m0.009s
+```
+
+5.2. На присутствующем значении:
+
+> time php5 ./test.php ./source.csv 0000,000435
+```
+Найдено на позиции: 434
+Значение: [0000,000435]
+
+real    0m0.104s
+user    0m0.009s
+sys     0m0.018s
 ```
