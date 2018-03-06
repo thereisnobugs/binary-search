@@ -1,8 +1,8 @@
 {
-	"name": "agentsib/binary-search",
-	"type": "library",
-	"description": "Binary Search Library for php",
-	"authors": [
+    "name": "agentsib/binary-search",
+    "type": "library",
+    "description": "Binary Search Library for php",
+    "authors": [
         {
             "name": "Andrew Kosov",
             "email": "andrew.kosov@gmail.com"
@@ -11,13 +11,13 @@
 
     "require": {
         "php":">=5.5.9",
-		"psr/log": ">=1.0.0"
+        "psr/log": ">=1.0.0"
     },
-	
-	"require-dev": {
-		"phpunit/phpunit": "^4.8"
-	},
-	"autoload": {
+
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
         "psr-4": { "BinarySearch\\": "./" },
         "exclude-from-classmap": [
             "/Tests/"

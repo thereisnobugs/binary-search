@@ -40,13 +40,13 @@ Binary Search Library for php
 include_once 'vendor/autoload.php';
 
 if (count($argv) < 3) {
-	// Вывод справки
-	print "Используйте php5 test.php файл искомая строка\n";
-	exit;
+    // Вывод справки
+    print "Используйте php5 test.php файл искомая строка\n";
+    exit;
 } else {
-	// Берем атрибуты переданные с коммандной строки
-	$filepath = $argv[1];
-	$pattern = $argv[2];
+    // Берем атрибуты переданные с коммандной строки
+    $filepath = $argv[1];
+    $pattern = $argv[2];
 }
 
 // Создаем объект источник данных для поиска
@@ -62,8 +62,8 @@ $searcher = new \BinarySearch\BinarySearch($dataSource);
 $position = $searcher->search($pattern);
 
 if ( is_null($position) ) {
-	print 'Не найдено'."\n";
-	exit;
+    print 'Не найдено'."\n";
+    exit;
 } 
 
 print 'Найдено на позиции: '.$position."\n";
