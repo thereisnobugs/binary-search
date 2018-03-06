@@ -1,5 +1,9 @@
 # binary-search
 
+This is a fork of [keepper/binary-search](https://github.com/keepper/binary-search), the original maintainer does not continue maintenance.
+
+---
+
 Binary Search Library for php
 
 Реализация алгоритма бинарного поиска на PHP
