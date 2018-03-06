@@ -2,6 +2,7 @@
     "name": "agentsib/binary-search",
     "type": "library",
     "description": "Binary Search Library for php",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Andrew Kosov",
