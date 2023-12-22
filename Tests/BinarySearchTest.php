@@ -2,11 +2,13 @@
 
 namespace BinarySearch\Tests;
 
-class BinarySearchTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class BinarySearchTest extends TestCase
 {
     private $searcher = null;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $dataSource = new \BinarySearch\DataSource\FileData(__DIR__ . '/Mixtures/data_source_1.txt');

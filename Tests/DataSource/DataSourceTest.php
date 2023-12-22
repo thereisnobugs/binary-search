@@ -3,8 +3,9 @@
 namespace BinarySearch\Tests\DataSource;
 
 use BinarySearch\Interfaces\DataSource;
+use PHPUnit\Framework\TestCase;
 
-abstract class DataSourceTest extends \PHPUnit_Framework_TestCase
+abstract class DataSourceTest extends TestCase
 {
     /**
      * @dataProvider countProvider

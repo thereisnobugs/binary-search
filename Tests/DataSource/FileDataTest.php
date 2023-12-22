@@ -34,7 +34,7 @@ class FileDataTest extends \BinarySearch\Tests\DataSource\DataSourceTest
         return [
             [$dataSource, 0, ''],
             [$dataSource, 2, '000001'],
-            [$dataSource, 10, '0000010']
+            [$dataSource, 10, '000010']
         ];
     }
 
